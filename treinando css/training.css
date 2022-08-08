@@ -1,0 +1,63 @@
+.content-tittle { 
+    margin: 0 0 40px;
+    font-size: 40px;
+    color: #c4c4c4;
+}
+
+.content-paragraph {
+    max-width: 1500px; /*largura do texto, para não esticar até o fim*/
+    line-height: 20px;
+    font-size: 20px;
+    color: #333333;
+    margin: 0 0 80px;
+}
+
+.infocard {
+    display: flex; /*permite que o texto fique ao lado da imagem*/
+    align-items: center; /*faz com que o texto fique centralizado à imagem*/
+    justify-content: center; /*faz com que o cartão seja alinhado ao centro*/
+}
+
+.infocard-image {
+    display: block; /*evita que um espaço sobre embaixo da imagem*/
+    width: 500px; /*largura*/
+    height: 250px; /*altura*/
+    margin-right: 80px;/*descola o texto da imagem ou da borda da pagina/div*/
+}
+
+.infocard-wrapper { /*nome da divisão onde tem só o infocard à direita da imagem serve para colocar border e entender melhor o tamanho*/
+    margin: 0;
+}
+
+.infocard-tittle {
+    margin: 0 0 12px;
+    font-size: 30px;
+    color: #c4c4c4;
+}
+
+.infocard-paragraph {
+    line-height: 20px; /*altura da linha de texto*/
+    font-size: 16px;
+    color: #333333;
+    margin: 0 0 24px;
+    max-width: 400px; /*largura do texto, para não esticar até o fim*/
+}
+
+.infocard-button { 
+    display: flex; /*evita o coding in-line de um link*/
+    align-items: center; /*centraliza o texto na vertical*/
+    justify-content: center; /*centraliza no meio o texto do botão*/
+    /*tanto width e height podem ser substituidos por padding*/
+    width: 120px;
+    height: 40px;
+    background: #2eed71;
+    font-weight: 700; /*define se vai ser bold(700)*/
+    color: #ffffff;
+    text-decoration: none; /*tira o underline do link, sem sublinhado*/
+    text-transform: uppercase; /*deixa todo o texto em maiúsculo ou lowercase*/
+    transition: background-color 0.4s linear;
+}
+
+.infocard-button:hover { /*o que faz o botão mudar cor com o mouse*/
+    background: #209f4d;
+}
